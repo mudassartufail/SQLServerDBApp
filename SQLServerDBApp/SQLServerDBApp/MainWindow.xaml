@@ -1,0 +1,35 @@
+﻿<Window x:Class="SQLServerDBApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SQLServerDBApp"
+        mc:Ignorable="d"
+        Background="WhiteSmoke"
+        Icon="images/backup_icon.ico"
+        Title="SQL Server Backup / Restore App" Height="481.579" Width="811.842">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="194*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas HorizontalAlignment="Left" Height="251" Margin="10,99,0,0" VerticalAlignment="Top" Width="784" Grid.ColumnSpan="3">
+            <Label x:Name="label" Content="Enter Server name, Username and Password to Continue:" Canvas.Left="329" Canvas.Top="10" Width="445"/>
+            <Label x:Name="label1" Content="Server name:" Canvas.Left="327" Canvas.Top="67" Width="109"/>
+            <Label x:Name="label1_Copy" Content="Username:" Canvas.Left="327" Canvas.Top="98" Width="109"/>
+            <Label x:Name="label1_Copy1" Content="Password:" Canvas.Left="327" Canvas.Top="129" Width="109"/>
+            <TextBox x:Name="txtUsername" Height="23" Canvas.Left="436" TextWrapping="Wrap" Canvas.Top="101" Width="336"/>
+            <PasswordBox x:Name="txtPassword" Height="23" Canvas.Left="436" Canvas.Top="132" Width="336"/>
+            <Button x:Name="btnConnect" Click="btnConnect_Click" Content="Connect" Canvas.Left="697" Canvas.Top="160" Width="75" RenderTransformOrigin="1.171,-1.011"/>
+            <Image x:Name="image" Source="images\dbserver.png" Height="231" Canvas.Left="10" Canvas.Top="10" Width="291"/>
+            <TextBox x:Name="txtServerName" Height="23" Canvas.Left="436" TextWrapping="Wrap" Canvas.Top="70" Width="336"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="804" Background="Navy" Grid.ColumnSpan="3">
+            <Label x:Name="label2" Content="SQL Server Backup &amp; Restore Utility" FontSize="24" FontWeight="Bold" Foreground="White" Canvas.Left="186" Canvas.Top="10" Width="486"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="804" Margin="0,397,0,0" Grid.ColumnSpan="3">
+            <Label x:Name="label3" Content="Developed By: Mudassar Technologies" Canvas.Left="67" Canvas.Top="10" Width="481"/>
+        </Canvas>
+    </Grid>
+</Window>
