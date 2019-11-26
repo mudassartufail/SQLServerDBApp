@@ -1,2 +1,2 @@
 # SQLServerDBApp
-SQL Server Multiple Database Backups and Restore Utility
+MS SQL Server Multiple Databases Backup and Restore Utility developed with WPF and C#
